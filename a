@@ -1,0 +1,4 @@
+file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/Third_Party/FreeRTOS/*.*" "Drivers/*.*"
+        "TouchGFX/target/*.*" "TouchGFX/App/*.*" "TouchGFX/gui/*.*"
+        "TouchGFX/generated/fonts/*.*" "TouchGFX/generated/images/*.*"
+        "TouchGFX/generated/gui_generated/*.*" "TouchGFX/generated/texts/*.*")

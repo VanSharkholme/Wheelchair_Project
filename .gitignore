@@ -1,0 +1,7 @@
+/TouchGFX/simulator/
+/TouchGFX/build
+/Debug
+/cmake-build-debug
+/.settings
+/Middlewares
+/Drivers
