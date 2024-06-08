@@ -49,7 +49,7 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(Core/Inc TouchGFX/App TouchGFX/target/generated TouchGFX/target Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/ST/touchgfx/framework/include TouchGFX/generated/fonts/include TouchGFX/generated/gui_generated/include TouchGFX/generated/images/include TouchGFX/generated/texts/include TouchGFX/generated/videos/include TouchGFX/gui/include)
+include_directories(Core/Inc TouchGFX/App TouchGFX/target/generated TouchGFX/target Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/ST/touchgfx/framework/include TouchGFX/generated/fonts/include TouchGFX/generated/gui_generated/include TouchGFX/generated/images/include TouchGFX/generated/texts/include TouchGFX/generated/videos/include TouchGFX/gui/include Middlewares/ST/ARM/DSP/Inc)
 link_directories(Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc)
 link_libraries("libtouchgfx-float-abi-hard.a")
 
@@ -59,7 +59,7 @@ file(GLOB_RECURSE TOUCH_GFX_SRC "TouchGFX/target/*.*" "TouchGFX/App/*.*" "TouchG
         "TouchGFX/generated/fonts/*.*" "TouchGFX/generated/images/*.*"
         "TouchGFX/generated/gui_generated/*.*" "TouchGFX/generated/texts/*.*")
 
-file(GLOB_RECURSE SOURCES "TouchGFX/*.*" "Core/*.*" "Middlewares/*.*" "Drivers/*.*")
+file(GLOB_RECURSE SOURCES "TouchGFX/*.*" "Library/*.*" "Core/*.*" "Middlewares/*.*" "Drivers/*.*")
 file(GLOB_RECURSE excludes "Middlewares/ST/touchgfx/*.*" "TouchGFX/generated/simulator/*.*" "TouchGFX/simulator/*.*" "TouchGFX/build/*.*")
 list(REMOVE_ITEM SOURCES ${excludes})
 set(SOURCES ${SOURCES} ${TOUCH_GFX_SRC})

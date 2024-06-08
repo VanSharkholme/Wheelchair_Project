@@ -34,6 +34,7 @@ extern "C" {
 #include "sdram.h"
 #include "CT_IIC.h"
 #include "stdio.h"
+#include "max30102.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -59,6 +60,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define PPG_SDA_Pin GPIO_PIN_3
+#define PPG_SDA_GPIO_Port GPIOE
+#define PPG_SCL_Pin GPIO_PIN_4
+#define PPG_SCL_GPIO_Port GPIOE
+#define PPG_INT_Pin GPIO_PIN_5
+#define PPG_INT_GPIO_Port GPIOE
 #define CTP_RST_Pin GPIO_PIN_8
 #define CTP_RST_GPIO_Port GPIOI
 #define LED_Pin GPIO_PIN_1

@@ -116,6 +116,7 @@ int main(void)
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
     HAL_UART_Transmit(&huart1, "SDRAM W9825G6KH Init success\n", 30, 100);
+    MAX_Init();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in cmsis_os2.c) */
